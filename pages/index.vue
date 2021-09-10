@@ -21,7 +21,6 @@ export default {
     let vm = this;
     setTimeout(function(){
      screen.width >= 767 ? vm.scrollDetector() : '';
-      console.log(screen.width)
     }, 300)
 
   },

@@ -21,6 +21,7 @@ export default {
       { hid: 'stripe', src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', defer: true },
       { hid: 'stripe', src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js', defer: true },
       { hid: 'stripe', src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js', defer: true },
+      { hid: 'stripe', src: 'https://code.jquery.com/jquery-3.6.0.min.js', defer: true },
     ]
   },
 

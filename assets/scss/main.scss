@@ -105,6 +105,23 @@ a{
     }
 }
 
+.light-btn{
+  color: $color-primary;
+  background-color: $color-secondary;
+  &:hover{
+    background-color: darken($color-secondary, 5);
+    color: $color-primary;
+  }
+}
+
+.red-btn{
+  color: $color-secondary;
+  background-color: $color-primary;
+  &:hover{
+    background-color: darken($color-primary, 5);
+    color: $color-secondary;
+  }
+}
 
 /////////////////////////////////////////////////
 

@@ -22,7 +22,8 @@ import anime from '@/node_modules/animejs/lib/anime';
 
 export default {
    mounted: function(){
-   screen.width > 767 ? this.runAnn() : '';
+      this.runAnn()
+   //screen.width > 767 ? this.runAnn() : '';
    },
    methods: {
      scrollToBot: function(){
