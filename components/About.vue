@@ -169,92 +169,242 @@ export default {
    }
 }
 
-@media screen and (min-width:1024px){
-   #about{
-    .img-container{
-      max-width: 608px;
-      overflow: hidden;
+@media screen and (max-width:1680px){
+       #about{
+   .img-container{
+      top: -9vh;
+      left: 20vw;
+      width: 650px;
+      height: 788px;
       border-radius: 0 0 0 565px;
         img{
             width: 100%;
         }
+   }
+   .about-header{
+      padding-top: 5vh;
+   }
+   .about-body{
+      padding-bottom: 20vh;
+      .showcase{
+         height: 100%;
+         .letters{
+             padding-top: 600px;
+             padding-left: 17vw;
+             .about-left-title{
+                 font-family: 'kate';
+               .d, .m{
+                  font-size: 220px;
+                  .left{
+                    justify-self: end;
+                  }
+                  .right{
+                     justify-self: start;
+                  }
+               }
+             }
+         }
+         .paragraphs{
+             z-index: 2;
+             padding-top: 300px;
+             padding-left: 0vh;
+             color: $color-secondary;
+             h3{
+                 font-size: 70px;
+             }
+             p{
+                 font-size: 45px;
+             }
+         }
       }
-      .about-body{
-
-      }
+    }
    }
 }
 
-
-@media screen and (min-width:1100px){
-   #about{
-    .img-container{
-      max-width: 608px;
-      overflow: hidden;
+@media screen and (max-width:1440px){
+      #about{
+   .img-container{
+      top: -9vh;
+      left: 20vw;
+      width: 500px;
+      height: 788px;
       border-radius: 0 0 0 565px;
         img{
             width: 100%;
         }
+   }
+   .about-header{
+      padding-top: 5vh;
+   }
+   .about-body{
+      padding-bottom: 20vh;
+      .showcase{
+         height: 100%;
+         .letters{
+             padding-top: 600px;
+             padding-left: 17vw;
+             .about-left-title{
+                 font-family: 'kate';
+               .d, .m{
+                  font-size: 180px;
+                  .left{
+                    justify-self: end;
+                  }
+                  .right{
+                     justify-self: start;
+                  }
+               }
+             }
+         }
+         .paragraphs{
+             z-index: 2;
+             padding-top: 300px;
+             padding-left: 0vh;
+             color: $color-secondary;
+             h3{
+                 font-size: 40px;
+             }
+             p{
+                 font-size: 25px;
+             }
+         }
+      }
+    }
+   }
+}
+
+@media screen and (max-width:1024px){
+   #about{
+   .img-container{
+    //position:initial;
+      top: -9vh;
+      left: 0vw;
+      width: 100%;
+      height: 788px;
+      border-radius: 0 0 0 565px;
+        img{
+            width: 100%;
+        }
+    }
+   .about-header{
+      padding-top: 5vh;
+   }
+   .about-body{
+      padding-bottom: 20vh;
+      .showcase{
+         height: 100%;
+         .letters{
+            padding-top: 600px;
+             padding-left: 17vw;
+             .about-left-title{
+                 font-family: 'kate';
+               .d, .m{
+                  font-size: 150px;
+                  .left{
+                    justify-self: end;
+                  }
+                  .right{
+                     justify-self: start;
+                  }
+               }
+             }
+         }
+         .paragraphs{
+             z-index: 2;
+             padding-top: 300px;
+             padding-left: 0vh;
+             color: $color-secondary;
+             h3{
+                 font-size: 40px;
+             }
+             p{
+                 font-size: 25px;
+             }
+         }
+      }
+   }
+   }
+}
+
+@media screen and (max-width:767px) {
+    #about{
+      .img-container{
+      //position:initial;
+         top: -9vh;
+         left: 0vw;
+         width: 100%;
+         height: 788px;
+         border-radius: 0 0 0 565px;
+         img{
+               width: 100%;
+         }
+      }
+      .about-header{
+         padding-top: 5vh;
       }
       .about-body{
+         padding-bottom: 20vh;
          .showcase{
-
+            height: 100%;
+            .letters{
+               display: none;
+            }
+            .paragraphs{
+               z-index: 2;
+               padding-top: 300px;
+               padding-left: 0vh;
+               color: $color-secondary;
+               h3{
+                  font-size: 42px;
+               }
+               p{
+                  font-size: 30px;
+               }
+            }
          }
       }
    }
 }
 
-@media screen and (min-width:1440px){
-   #about{
-    .img-container{
-      max-width: 608px;
-      overflow: hidden;
-      border-radius: 0 0 0 565px;
-        img{
-            width: 100%;
-        }
+
+@media screen and (max-width:350px) {
+    #about{
+      .img-container{
+      //position:initial;
+         top: -9vh;
+         left: 0vw;
+         width: 100%;
+         height: 788px;
+         border-radius: 0 0 0 565px;
+         img{
+               width: 100%;
+         }
+      }
+      .about-header{
+         padding-top: 5vh;
       }
       .about-body{
+         padding-bottom: 20vh;
          .showcase{
-
+            height: 100%;
+            .letters{
+               display: none;
+            }
+            .paragraphs{
+               z-index: 2;
+               padding-top: 300px;
+               padding-left: 0vh;
+               color: $color-secondary;
+               h3{
+                  font-size: 32px;
+               }
+               p{
+                  font-size: 20px;
+               }
+            }
          }
       }
    }
 }
 
-@media screen and (min-width:1680px){
-   #about{
-    .img-container{
-      max-width: 608px;
-      overflow: hidden;
-      border-radius: 0 0 0 565px;
-        img{
-            width: 100%;
-        }
-      }
-      .about-body{
-         .showcase{
-
-         }
-      }
-   }
-}
-
-@media screen and (min-width:1920px){
-   #about{
-    .img-container{
-      max-width: 608px;
-      overflow: hidden;
-      border-radius: 0 0 0 565px;
-        img{
-            width: 100%;
-        }
-      }
-      .about-body{
-         .showcase{
-
-         }
-      }
-   }
-}
 </style>

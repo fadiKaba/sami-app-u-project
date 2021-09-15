@@ -69,7 +69,7 @@ export default {
             gsap.from(el, {
             scrollTrigger: {
                 trigger: el,
-                start: 'center 80%',
+                start: 'center 85%',
                 end: 'center bottom',
             // markers: true,
                 toggleActions: "restart none none none",
@@ -220,8 +220,12 @@ export default {
   #form-container{
       width:70vw;
       margin-top:1vh;
-
+      margin: 0 0;
+      width:80vw;
       form{
+           text-align: left;
+            padding-left: 10px;
+           // margin-right: auto;
           input, textarea{
 
           }

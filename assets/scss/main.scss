@@ -88,22 +88,49 @@ a{
 }
 
 @keyframes arow-down{
-    from{
-        top: 93vh;
-    }
-    to{
-        top: 94vh;
-    }
+  0%{
+      transform: rotate(0);
+  }
+  25%{
+    transform: rotate(360deg);
+  }
+  50%{
+    transform: rotate(360deg)
+  }
+  75%{
+    transform: rotate(0deg)
+  }
+  100%{
+
+  }
 }
 
 @keyframes arow-up{
-    from{
-        bottom: 5vh;
-    }
-    to{
-        bottom: 6vh;
-    }
+  0%{
+      transform: rotate(180deg);
+  }
+  25%{
+    transform: rotate(540deg);
+  }
+  50%{
+    transform: rotate(540deg)
+  }
+  75%{
+    transform: rotate(180deg)
+  }
+  100%{
+
+  }
 }
+
+// @keyframes arow-up{
+//     from{
+//         bottom: 5vh;
+//     }
+//     to{
+//         bottom: 6vh;
+//     }
+// }
 
 .light-btn{
   color: $color-primary;

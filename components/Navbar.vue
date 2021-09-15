@@ -17,6 +17,9 @@
                 <NuxtLink  exact to="/">Home</NuxtLink>
             </li>
             <li>
+                <NuxtLink exact to="/#contact">contact</NuxtLink>
+            </li>
+            <li>
                 <NuxtLink exact to="/portfolio">portfolio</NuxtLink>
             </li>
             <li>
@@ -218,7 +221,7 @@ $links-font-size: 1rem;
     }
     .burger-menu{
         position: absolute;
-        left: 20px;
+        right: 20px;
         top: 0px;
         .burger-top, .burger-bottom{
         }
@@ -243,7 +246,7 @@ $links-font-size: 1rem;
     .linkedin-out{
        // visibility: hidden;
        position: absolute;
-       right: 20px;
+       left: 20px;
        top: 15px;
       svg{
          margin-bottom: 0vh;

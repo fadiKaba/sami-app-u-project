@@ -12,6 +12,7 @@ export default {
   transition: 'slide',
   mounted: function(){
     this.setIsNavbarSlider(false);
+    document.body.onscroll = function(){}
   },
   methods:{
     ...mapMutations(['setIsNavbarSlider'])

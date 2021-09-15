@@ -14,11 +14,14 @@ import { mapState, mapMutations } from 'vuex';
 
 export default {
   transition: 'slide',
-  beforeMount: function(){
+  data: function(){
+    return {
 
+    }
   },
   mounted: function() {
     let vm = this;
+
     setTimeout(function(){
      screen.width >= 767 ? vm.scrollDetector() : '';
     }, 300)
@@ -31,17 +34,17 @@ export default {
     ...mapMutations(['setIsNavbarSlider']),
     scrollDetector: function(){
       let timer = null;
-      let vm = this
+      let vm = this;
       document.body.onscroll = function (){
         if(timer != null){
           clearTimeout(timer)
         }
         timer = setTimeout(function (){
-          if(window.scrollY > (document.body.scrollHeight /4)){
-            window.scrollTo(0, document.body.scrollHeight);
-          }else{
-            window.scrollTo(0, 0);
-          }
+            if(window.scrollY > (document.body.scrollHeight /4)){
+              window.scrollTo(0, document.body.scrollHeight);
+            }else{
+              window.scrollTo(0, 0);
+            }
         }, 200);
       }
     },

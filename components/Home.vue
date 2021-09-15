@@ -22,11 +22,12 @@ import anime from '@/node_modules/animejs/lib/anime';
 
 export default {
    mounted: function(){
-      this.runAnn()
+     // this.runAnn()
    //screen.width > 767 ? this.runAnn() : '';
    },
    methods: {
      scrollToBot: function(){
+        console.log('dd')
        window.scrollTo(0,document.body.scrollHeight)
      },
       runAnn: function(){
@@ -80,21 +81,12 @@ export default {
    #arow-down{
       position: absolute;
       top: 93vh;
-      left: calc(49vw - calc((35px)/2));
+      left: calc(50vw - calc((35px)/2));
       width: 35px;
       cursor: pointer;
-      animation: arow-down 0.7s ease infinite;
+      animation: arow-down 10s ease infinite;
       z-index: 2;
    }
-}
-
-@keyframes arow-down{
-    from{
-        top: 93vh;
-    }
-    to{
-        top: 94vh;
-    }
 }
 
 @media screen and (max-width:1620px){
@@ -173,8 +165,12 @@ export default {
             h1{
             font-size: 80px;
             line-height: 7.25rem;
+            text-align: left;
+            padding-left: 10px;
             }
             p{
+               text-align: left;
+               padding-left: 10px;
             }
          }
       }

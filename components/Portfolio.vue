@@ -31,7 +31,7 @@ import anime from '@/node_modules/animejs/lib/anime';
 
 export default {
    mounted: function(){
-      this.runnAn();
+     // this.runnAn();
    },
    computed: {
       ...mapState(['layoutState'])
@@ -182,7 +182,7 @@ export default {
    #portfolio{
       .portfolio-body{
          // padding-bottom: 10vh;
-         padding-left: 10px;
+         padding-left: 20px;
          .showcase{
             ul{
                 li{
@@ -199,8 +199,10 @@ export default {
 
 @media screen and (max-width:767px) {
     #portfolio{
+       text-align: left;
        .portfolio-header{
-         display: none;
+         padding-top: 80px;
+         margin-left: 20px;
       }
       .portfolio-body{
           padding-bottom: 200px;
@@ -223,6 +225,7 @@ export default {
       .portfolio-body{
           padding-bottom: 200px;
          .showcase{
+            justify-content: center;
             ul{
                 li{
                     a{

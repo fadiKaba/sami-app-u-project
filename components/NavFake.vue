@@ -142,18 +142,23 @@ export default {
     right: 0vw;
     height: 100px;
     width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
     .burger-menu{
         margin-top: 0px;
-        margin-left: 20px
+        margin-left: 20px;
+        position: absolute;
+        right: 20px;
+        top: 27px;
     }
     .linkedin-out{
-        margin-right: 20px;
+       position: absolute;
+       left: 20px;
+       top: 15px;
       svg{
-         margin-top: 20px;
+        // margin-top: 20px;
         .svg-linked{
         }
       }

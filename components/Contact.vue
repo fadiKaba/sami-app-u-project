@@ -90,12 +90,12 @@ export default {
    #arow-down-red{
       position: absolute;
       bottom: 5vh;
-      left: calc(49vw - calc((35px)/2));
+      left: calc(50vw - calc((35px)/2));
       width: 35px;
       transform: rotate(180deg);
       cursor: pointer;
       z-index: 3;
-      animation: arow-up 0.7s ease infinite;
+      animation: arow-up 10s ease infinite;
    }
 }
 
@@ -187,12 +187,15 @@ export default {
         .showcase{
 
           .contact-header{
-           // padding-top: 100px;
+            text-align: left;
+            padding-left: 10px;
             .tit{
+
             }
           }
           .cont{
-            text-align: center;
+            text-align: left;
+            padding-left: 10px;
             span{
               padding-top: 3vh;
               line-height: 5.25rem;
